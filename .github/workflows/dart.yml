@@ -34,7 +34,7 @@ jobs:
         
       - name: Run Dart
         env:
-          cookie: ${{secrets.cookie}}
+          COOKIE: ${{ secrets.COOKIE }}
         run: dart bin/glados.dart
         
       
