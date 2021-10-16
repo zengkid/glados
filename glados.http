@@ -1,9 +1,0 @@
-
-POST https://glados.rocks/api/user/checkin
-content-type:application/json;charset=UTF-8
-cookie:_ga=GA1.2.1419742385.1630674104; koa:sess=eyJ1c2VySWQiOjY2Nzk1LCJfZXhwaXJlIjoxNjU5NDA5NjQyOTkzLCJfbWF4QWdlIjoyNTkyMDAwMDAwMH0=; koa:sess.sig=kN66-kf_ia0x_UxI1j_cALtHOdQ; _gid=GA1.2.1814523799.1634375787; _gat_gtag_UA_104464600_2=1
-# referer:https://glados.rocks/console/checkin
-# origin:https://glados.rocks
-# user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
-
-{"token":"glados_network"}
