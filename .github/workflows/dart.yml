@@ -33,6 +33,8 @@ jobs:
         run: dart pub get
         
       - name: Run Dart
+        env:
+          cookie: ${{secrets.cookie}}
         run: dart bin/glados.dart
         
       
