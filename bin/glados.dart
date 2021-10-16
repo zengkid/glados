@@ -13,13 +13,13 @@ Future<void> main(List<String> arguments) async {
       '_ga=GA1.2.1419742385.1630674104; koa:sess=eyJ1c2VySWQiOjY2Nzk1LCJfZXhwaXJlIjoxNjU5NDA5NjQyOTkzLCJfbWF4QWdlIjoyNTkyMDAwMDAwMH0=; koa:sess.sig=kN66-kf_ia0x_UxI1j_cALtHOdQ; _gid=GA1.2.1814523799.1634375787; _gat_gtag_UA_104464600_2=1';
   print('cookie = $cookie');
 
-  // var payload = json.encode({'token': 'glados_network'});
-  // var response = await http.post(Uri.parse(url),
-  //     headers: {
-  //       'content-type': 'application/json;charset=UTF-8',
-  //       'cookie': cookie,
-  //     },
-  //     body: payload);
-  // // http.post(url, )
-  // print(response.body);
+  var payload = json.encode({'token': 'glados_network'});
+  var response = await http.post(Uri.parse(url),
+      headers: {
+        'content-type': 'application/json;charset=UTF-8',
+        'cookie': cookie,
+      },
+      body: payload);
+  // http.post(url, )
+  print(response.body);
 }
