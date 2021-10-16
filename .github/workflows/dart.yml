@@ -7,7 +7,9 @@ name: Dart
 
 on:
   schedule:
-    - cron: "0 0 * * *"   
+      #0 */5 * * * ?   run  every 5 min 
+      # 0 0 23 * * ?    run at 23 very day 
+   - cron: "0 0 * * *"   #daily    
   
 
 jobs:
