@@ -21,9 +21,12 @@ jobs:
       - name: Install dependencies
         run: dart pub get
         
-      - name: Run Dart
+      - name: Run glados
         env:
           COOKIE: ${{ secrets.COOKIE }}
         run: dart bin/glados.dart
+
+      - name: Run winxin group
+        run: dart bin/weidu.dart
         
       

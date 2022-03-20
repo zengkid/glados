@@ -1,0 +1,31 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Dart
+
+on:
+  schedule:
+      #0 */5 * * * ?   run  every 5 min 
+      # 0 0 23 * * ?    run at 23 very day 
+   - cron: "0 12 * * 6"   #每周六中文12点  
+  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dart-lang/setup-dart@v1
+
+      - name: Install dependencies
+        run: dart pub get
+        
+      - name: Run Dart
+        env:
+          COOKIE: ${{ secrets.COOKIE }}
+        run: dart bin/weidu.dart
+        
+      
